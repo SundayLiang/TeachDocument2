@@ -1,0 +1,21 @@
+.dataTable {
+    border-collapse: collapse;
+    font-family: "瀵邦喛钂嬮梿鍛寸拨";
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.dataTable td {
+    border: solid 1px #333;
+}
+
+.blue {
+    background-color: #E2F4FB;
+}
+
+.myoption{
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../CourseDoc/docdetail.css"/>
+    <script type="text/javascript" src="/TeachDocument2/js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="/TeachDocument2/js/termList.js"></script>
+</head>
+<body>
+
+        <div id="main">
+            <div class="card" style="height: 520px;width:1000px">
+                <p class="card_text">导入课堂质量评价结果</p>
+                <div style="height:0px; width:900px; border-bottom:1px dashed #999;
+         margin-left:34px ;margin-top:5px;postition:absolute; top:50px"></div>
+        <form style="margin-left: 200px; margin-right: auto" action="/TeachDocument2/importExcel/importexcel" method="post" enctype="multipart/form-data" id="mainform">
+            请选择学期<br/>
+            <select name="term" id="term">
+            </select>
+            <br/>
+            <input id="file" type="file" name="file"/>
+            <input type="submit"/>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

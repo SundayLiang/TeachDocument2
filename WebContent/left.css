@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+#left {
+	height: 1400px;
+	width: 230px;
+}
+
+#left div:first-child {
+	background-color: #333333;
+	width: 230px;
+	height: 100px;
+}
+
+#left div:last-child {
+	background-color: #797979;
+	width: 230px;
+	height: 1300px;
+}
+
+#left #photo {
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 40px;
+	left: 55px;
+	background-color: #fff;
+	border-radius: 60px;
+	box-shadow: #333 0px 1px 7px 0px;
+}
+
+#left #photo:after {
+	display: block;
+	content: "";
+	height: 108px;
+	width: 108px;
+	background-image: url(pic/photo.png);
+	background-size: cover;
+	border-radius: 54px;
+	border: solid 1px #aaa;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+#left .f1 {
+	font-size: 20px;
+	color: #fff;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+}
+
+#left .f2 {
+	font-size: 14px;
+	color: #fff;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+}
+
+#left table {
+	border-collapse: collapse;
+}
+
+#left .cell {
+	border-top: solid 1px #696969;
+	border-bottom: solid 1px #696969;
+	height: 70px;
+	text-align: center;
+	color: #fff;
+	font-family: "寰蒋闆呴粦";
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+#left .cell:hover {
+	cursor: pointer;
+	background-color: #999999;
+}
+
+.cell_active {
+	border-top: solid 1px #696969;
+	border-bottom: solid 1px #696969;
+	height: 70px;
+	text-align: center;
+	color: #fff;
+	font-family: "寰蒋闆呴粦";
+	font-size: 16px;
+	letter-spacing: 1px;
+	background-color: #1AB8F3;
+}

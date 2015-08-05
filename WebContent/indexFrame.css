@@ -1,0 +1,400 @@
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+
+#indexFrame {
+	width: 1170px;
+	margin-top: 10px;
+	float: left;
+}
+
+#indexFreamArea_1 {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 3px;
+	border-collapse: collapse;
+	margin-left: 30px;
+	width: 692px;
+}
+
+#indexFrame th {
+	background-color: #f8f8f8;
+	text-align: left;
+}
+
+#indexFrame .f1 {
+	font-size: 16px;
+	font-family: "寰蒋闆呴粦";
+	font-weight: bold;
+	border: solid 1px #ccc;
+	padding-left: 20px;
+	letter-spacing: 1px;
+}
+
+#indexFrame .f2 {
+	font-size: 14px;
+	font-family: "寰蒋闆呴粦";
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+#indexFrame .f3 {
+	font-size: 14px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+}
+
+#indexFrame .f4 {
+	font-size: 18px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+#indexFrame .f5 {
+	font-size: 12px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+}
+
+#indexFrame .f6 {
+	font-size: 36px;
+	font-family: "arial";
+	letter-spacing: 1px;
+	padding-left: 30px;
+}
+
+#indexFrame .f7 {
+	font-size: 14px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+	padding-left: 30px;
+}
+
+#indexFreamArea_1 table:last-child {
+	border-top: 1px solid #ccc;
+	font-size: 14px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+}
+
+#indexFreamArea_2 {
+	background-color: #fff;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+}
+
+#indexFreamArea_2 table:first-child {
+	margin-top: 15px;
+	border-bottom: solid #ccc 1px;
+}
+
+#indexFreamArea_2 p {
+	padding-left: 20px;
+	font-size: 14px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#indexFreamArea_2 table:last-child {
+	border-top: solid #ccc 1px;
+	margin-top: 5px;
+}
+
+#indexFreamArea_3 {
+	background-color: #fff;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	/* 	border-radius-bottom-left:3px; */
+}
+
+#indexFreamArea_3 td {
+	background-color: #ccc;
+	/* 	border: solid 1px #ccc; */
+	border: solid 1px #fff;
+	text-align: center;
+	font-size: 14px;
+	font-family: "寰蒋闆呴粦";
+	letter-spacing: 1px;
+}
+
+#indexFrameTable_2 {
+	margin-top: 20px;
+}
+
+#charArea_1 {
+	background-color: #fff;
+	border: solid #ccc 1px;
+}
+
+#indexFrame .tip {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	border: solid #ccc 1px;
+}
+
+#cell_1 {
+	width: 90px;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 20px;
+	background-color: #EF3C7D;
+}
+
+#cell_2 {
+	width: 90px;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 20px;
+	background-color: #22BEEF;
+}
+
+#cell_3 {
+	width: 90px;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 20px;
+	background-color: #1FBBA6;
+}
+
+#cell_4 {
+	width: 90px;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 20px;
+	background-color: #21C154;
+}
+
+#cell_5 {
+	width: 90px;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 20px;
+	background-color: #FFC100;
+}
+
+#cell_6 {
+	width: 90px;
+	height: 80px;
+	line-height: 80px;
+	margin-right: 20px;
+	background-color: #FF5252;
+}
+
+#indexFrame .chart {
+	float: left;
+	width: 490px;
+	height: 270px;
+	border: #999 solid 1px;
+	/* 	box-shadow:5px 2px 2px 0px #dddddd; */
+	margin-left: 18px;
+	margin-top: 30px;
+}
+
+#indexFrame .small_chart {
+	border: #666 solid 1px;
+	/* 	box-shadow:5px 2px 2px 0px #dddddd; */
+	margin-left: 42px;
+}
+
+#main table {
+	padding: 0;
+	margin: 0;
+}
+
+#system_notice {
+	float: left;
+	font-family: "寰蒋闆呴粦";
+	width: 370px;
+	height: 522px;
+	border: 1px solid #ccc;
+}
+
+#fast_link {
+	width: 692px;
+	height: 191px;
+	border: 1px solid #ccc;
+	z-index: 10;
+	margin-left: 30px;
+	background-color: #FFF;
+}
+
+#left_chat_div {
+	width: 525px;
+	height: 620px;
+	border: 1px solid #ccc;
+	margin-left: 30px;
+	margin-left: 30px;
+}
+
+#right_chart {
+	width: 567px;
+	height: 220px;
+	border: 1px solid #ccc;
+	margin-left: 30px;
+	margin-top: 34px;
+}
+
+#main .small_pic_bg {
+	width: 90px;
+	height: 80px;
+	border: 1px solid #333;
+	background-color: #EF3C7D;
+}
+
+#fast_link div {
+	width: 83px;
+	height: 83px;
+	/* 	border:1px solid #ccc; */
+}
+
+#fast_link table {
+	margin-top: 4px;
+	margin-left: 6px;
+}
+
+#sys_title {
+	margin: 0;
+	float: left;
+	font-size: 18px;
+}
+
+#sys_title_date {
+	margin: 0;
+	font-size: 14px;
+}
+
+#system_notice table {
+	margin-top: 14px;
+	margin-left: 24px;
+}
+
+#pic_notice {
+	max-width: 60px;
+	width: expression(this.width > 60 ? "60px" : this.width);
+	max-height: 37px;
+	height: expression(this.height > 35 ? "35px" : this.height);
+}
+
+#notice_content_table p {
+	font-family: "寰蒋闆呴粦";
+	font-size: 14px;
+	margin: 6px;
+}
+
+#page_change a {
+	font-family: "寰蒋闆呴粦";
+	font-size: 12px;
+	margin: 6px;
+	color: #666;
+}
+
+.small_rec {
+	overflow: hidden;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.small_rec p {
+	display: none;
+	color: #fff;
+	position: absolute;
+	z-index: 10;
+	margin-left: 12px;
+	margin-top: 32px;
+	font-family: "微森覅蹥";
+	font-size: "28px";
+	font-weight: bold;
+}
+
+#rec1 {
+	overflow: hidden;
+	background: url("pic/rec1.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec2 {
+	overflow: hidden;
+	background: url("pic/rec2.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec3 {
+	overflow: hidden;
+	background: url("pic/rec3.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec4 {
+	overflow: hidden;
+	background: url("pic/rec4.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec5 {
+	overflow: hidden;
+	background: url("pic/rec5.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec6 {
+	overflow: hidden;
+	background: url("pic/rec6.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec7 {
+	overflow: hidden;
+	background: url("pic/rec7.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec8 {
+	overflow: hidden;
+	background: url("pic/rec8.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec9 {
+	overflow: hidden;
+	background: url("pic/rec9.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec10 {
+	overflow: hidden;
+	background: url("pic/rec10.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec11 {
+	overflow: hidden;
+	background: url("pic/rec11.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}
+
+#rec12 {
+	overflow: hidden;
+	background: url("pic/rec12.png") no-repeat;
+	-webkit-background-size: 83px 83px;
+	background-size: 83px 83px;
+}

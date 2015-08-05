@@ -1,0 +1,150 @@
+body {
+	background-color: #fff;
+	width: 1000px;
+	height: 1200px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#main {
+	background-color: #fff;
+	width: 1000px;
+	height: 1200px;
+	margin-left: -50px;
+}
+
+#line {
+	height: 2px;
+	width: 731px;
+	background-color: #000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main .card {
+	float: left;
+	width: 401px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	margin-left: 83px;
+	margin-top: 40px;
+	background-color: #f5f5f5;
+}
+
+#main .card_text {
+	border: 1px;
+	font-size: 18px;
+	font-family: "锟斤拷锟斤拷细锟斤拷";
+	font-weight: bold;
+	color: #93388f;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+#main .step {
+	float: left;
+	width: 60px;
+	height: 56px;
+	background-color: #93388f;
+	border-radius: 6px;
+}
+
+#main .step_text {
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+	left: 15px;
+	top: 7px;
+	margin-top: 20px;
+}
+
+#main .step_figure {
+	color: #fff;
+	font-family: "Calibri";
+	font-size: 28px;
+	font-weight: bold;
+	position: relative;
+	left: 16px;
+}
+
+#main .table_text {
+	font-family: "锟斤拷锟斤拷细锟斤拷";
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	letter-spacing: 4px;
+}
+
+#main .explain_title {
+	height: 62px;
+	width: 254px;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 4px;
+	background-color: #666;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#main .explain_text {
+	font-family: "Arial";
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.subbutton {
+	width: 150px;
+	height: 50px;
+	background-color: #4D8796;
+	border-radius: 10px;
+}
+
+.evaimg {
+	width: 100px;
+	height: 100px;
+}
+#main .my_table_text {
+	font-family: "锟斤拷锟斤拷细锟斤拷";
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	letter-spacing: 4px;
+
+}
+/*新加*/
+.pageTable {
+	border: none;
+	display: none;
+	margin-left: 100px;
+}
+
+.pageTable td {
+	border: none;
+}
+
+.pageTable .pageBtn {
+	height: 30px;
+	width: 100px;
+	background-color: #E4E4E4;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	border: #BDBDBD 1px solid;
+	box-shadow: #999 0px 2px 5px 0px;
+	font-family: "瀵邦喛钂嬮梿鍛寸拨";
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.pageTable .pageBtn:active {
+	box-shadow: inset #333 0px 1px 0px 0px;
+}
+#record .f2 {
+	font-family: "瀵邦喛钂嬮梿鍛寸拨";
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: bold;
+}

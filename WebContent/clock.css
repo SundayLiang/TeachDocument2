@@ -1,0 +1,62 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+#clock {
+	height: 70px;
+	width: 240px;
+}
+
+#clock #clockTable {
+	border-collapse: collapse;
+}
+
+#clockCalendar {
+	background-color: #1FBBA6;
+	border: solid 1px #CCCCCC;
+}
+
+#clockTimer {
+	background-color: #fff;
+	border: solid 1px #CCCCCC;
+}
+
+#clock .f1 {
+	font-family: arial;
+	color: #fff;
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+#clock .f2 {
+	font-family: arial;
+	color: #fff;
+	font-size: 34px;
+	padding-left: 5px;
+}
+
+#clock .f3 {
+	font-family: arial;
+	color: #fff;
+	font-size: 12px;
+	padding-top: 15px;
+}
+
+#clock .f4 {
+	font-family: arial;
+	color: #1FBBA6;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#clock .f5 {
+	font-family: arial;
+	color: #1FBBA6;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 15px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/model.css"/>
+    <link rel="stylesheet" type="text/css" href="manageUser.css" />
+    <script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="manageUser.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.modal.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script type="text/javascript">		function ShowModal(id){$('#content').modalInfowindow({width:800,	height:480,title:"用户角色权限设置",content:"<iframe style='width: 900px;height: 500px;border: none;' src='rolepermission.html?id="+id+"'/>"});}	</script>
+    <title>用户和权限管理</title>
+</head>
+<body>
+    <div id="record">
+        <ul id="tabs">
+            <li><a name="tab1"> 用户管理 </a></li>
+            <li><a name="tab2"> 添加用户 </a></li>
+
+        </ul>
+        <div id="content">
+
+            <div id="tab1">
+                <div class="th">
+                    <table width="100%" height="100%" border="0" cellpadding="0"
+                           cellspacing="0">
+                        <tr>
+                            <td width="200">用户编号</td>
+                            <td width="200">姓名</td>
+                            <td width="300">角色</td>
+                            <td width="200">忘记密码</td>
+                            <td width="300">操作</td>
+                            <td width="200">权限</td>
+
+                        </tr>
+                    </table>
+                </div>
+                <table id="allDataTable" class='dataTable' width="100%"
+                       height="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                </table>
+                <table id="allPageTable" class='pageTable' border="0" width="100%"
+                       height="90" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="120">
+                            <div id="allFirstPage" class="pageBtn">首&nbsp;页</div>
+                        </td>
+                        <td width="120">
+                            <div id="allPrevPage" class="pageBtn">上一页</div>
+                        </td>
+                        <td width="120">
+                            <div id="allNextPage" class="pageBtn">下一页</div>
+                        </td>
+                        <td width="120">
+                            <div id="allLastPage" class="pageBtn">尾&nbsp;页</div>
+                        </td>
+                        <td width="280" align="center" class="f2"><label
+                                id="allCurrentPage"></label>/<label id="allCountPage"></label></td>
+                        <td class="f2">跳转到<input type="text" class="toPage" />页
+                        </td>
+                    </tr>
+                </table>
+                <!--<input type="button" value="点一下" onclick="d.open('titleMessage','contentInformation');"/>-->
+                <!--<input type="button" value="点一下" onclick="d.open('Red-fox 温馨提示','这个是什么啊？你怎么不给我讲清楚啊？呵呵');"/>-->
+
+                <!--<div style="height:700px; background-image:url(bk.jpg); width:1200px;"></div>-->
+
+
+
+                <!--<script type="text/javascript">-->
+
+                    <!--var d=new DialogBox("MainId","DialogId","TitleID","ContentID");-->
+                    <!--/*-->
+
+                     <!--使用时只要在网页里构造一个对话框实例。然后分配好各ID 就行了。。-->
+
+                     <!--在要打开模态层时，只要用 实例.open('标题文字',‘提示信息’);-->
+                     <!--当然，这里的 标题文字,提示信息 得可以是html格式 的...-->
+
+                     <!--如：-->
+                     <!--<input type="button" value="点一下" onclick="d.open('Red-fox 温馨提示','这个是什么啊？你怎么不给我讲清楚啊？呵呵');" />-->
+
+                     <!--*/-->
+                <!--</script>-->
+
+            </div>
+            <div id="tab2">
+                <iframe style='width: 1000px;height: 900px;border: none;' src='newUser.html'></iframe>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

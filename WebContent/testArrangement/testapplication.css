@@ -1,0 +1,208 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	width: 1024px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+}
+
+#main .f1 {
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 40px;
+	line-height: 50px;
+}
+
+#main .f2 {
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 40px;
+	line-height: 50px;
+}
+
+#main .f3 {
+	font-size: 13px;
+	font-weight: normal;
+	margin-top: 40px;
+	letter-spacing: 30px;
+	position: relative;
+	top: 90px;
+	left: 250px;
+}
+
+#registerTable {
+	border: solid 2px #111111;
+	border-collapse: collapse;
+}
+
+#registerTable td {
+	border: solid 1px #111111;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+
+#registerTable .input_1 {
+	width: 100%;
+	border: none;
+	height: 55px;
+	outline: none;
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0);
+}
+
+#registerTable .input_2 {
+	width: 100%;
+	border: none;
+	height: 55px;
+	outline: none;
+	text-indent: 20px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0);
+}
+
+#registerTable .input_3 {
+	width: 100%;
+	border: none;
+	height: 55px;
+	outline: none;
+	text-indent: 20px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0);
+}
+
+#registerTable .input_4 {
+	width: 100%;
+	border: none;
+	height: 55px;
+	outline: none;
+	text-indent: 20px;
+	font-size: 13px;
+	background-color: rgba(0,0,0,0);
+	letter-spacing: 1px;
+}
+
+#registerTable .input_5 {
+	width: 755px;
+	border: none;
+	height: 55px;
+	outline: none;
+	text-indent: 20px;
+	font-size: 13px;
+	background-color: rgba(0,0,0,0);
+	letter-spacing: 1px;
+}
+
+#main .line {
+	height: 0px;
+	width: 900px;
+	border-top: dashed 2px #555555;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#submit {
+	height: 50px;
+	width: 170px;
+	background-color: #AE0057;
+	color: #fff;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	box-shadow: #777 0px 3px 5px 0px;
+	outline: none;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	letter-spacing: 1px;
+}
+
+#submit:active {
+	box-shadow: inset #000 0px 1px 2px 0px;
+}
+
+#note {
+	height: 50px;
+	width: 170px;
+	background-color: #008BCE;
+	color: #fff;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	box-shadow: #777 0px 3px 5px 0px;
+	outline: none;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	letter-spacing: 1px;
+}
+#note:active {
+	box-shadow: inset #000 0px 1px 2px 0px;
+}
+#process {
+	height: 50px;
+	width: 170px;
+	background-color: #669900;
+	color: #fff;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	box-shadow: #777 0px 3px 5px 0px;
+	outline: none;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	letter-spacing: 1px;
+}
+
+#main .combox{
+	margin-left: 20px;
+
+}
+#main .menu .item{
+	font-size: 12px;
+}
+#main .text{
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+}
+#main .t1{
+	width: 100px;
+}
+#main .t2{
+	width: 30px;
+}
+#result .f1{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 20px;
+}
+#result .f2{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 28px;
+}
+#result .f3{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+
+

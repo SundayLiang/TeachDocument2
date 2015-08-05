@@ -1,0 +1,71 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(pic/bg_4.png);
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+#main {
+	width: 1400px;
+	background-color: #F1F1F1;
+	height: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+}
+
+#leftFrame {
+	float: left;
+}
+
+#center {
+	float: left;
+}
+
+#titleTable {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#center .f1 {
+	font-family: "寰蒋闆呴粦";
+	font-size: 34px;
+	padding-left: 20px;
+	letter-spacing: 1px;
+}
+
+#center .f2 {
+	font-family: "寰蒋闆呴粦";
+	font-size: 16px;
+	padding-left: 20px;
+	letter-spacing: 1px;
+}
+
+#popup_query {
+	padding: 0px;
+	width: 532px;
+	border: 0px;
+	border-radius: 0px;
+	background: transparent;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+body {
+	background: #fff;
+}
+
+#popup_block {
+	padding: 0px;
+}
+
+#popup_name {
+	padding: 0px;
+	width: 532px;
+	border: 0px;
+	border-radius: 0px;
+	background: transparent;
+	box-shadow: 0px 0px 0px 0px;
+}

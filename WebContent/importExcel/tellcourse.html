@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="/TeachDocument2/js/jquery-2.1.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var flag=getvl("flag");
+            if(flag=="yes"){
+                alert("导入成功");
+                window.location.href="/TeachDocument2/importExcel/importCourse.html";}
+            else if(flag=="no"){
+                alert("该文件名的文件已经上传过！请另选或改名");
+                window.location.href="/TeachDocument2/importExcel/importCourse.html";
+            }
+            else
+            {
+                alert("系统错误，请稍后再试");
+                window.location.href="/TeachDocument2/importExcel/importCourse.html";
+            }
+        })
+        function getvl(name) {
+            var reg = new RegExp("(^|\\?|&)"+ name +"=([^&]*)(\\s|&|$)", "i");
+            if (reg.test(location.href)) return unescape(RegExp.$2.replace(/\+/g, " "));
+            return "";
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>系统设置</title>
+<link rel="stylesheet" type="text/css" href="system.css"/>
+</head>
+<body>
+   <div id="record">
+			<ul id="tabs">
+				<li>
+					<a name="tab1">
+						系统设置
+					</a>
+				</li>
+				<li>
+					<a name="tab2">
+						审核标准
+					</a>
+				</li>
+				
+			</ul>
+			<div id="content">
+			
+				<div id="tab1">
+					<div class="th">
+						<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="100">序列号</td>
+		                        <td width="600">文档名称</td>
+		                        <td width="200">截止日期</td>
+		                        <td width="200">延长期限</td>
+		                        <td width="100">保存修改</td>
+							</tr>
+						</table>
+					</div>
+					<table id="allDataTable" class='dataTable' width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+				       
+					
+					</table>
+				</div>	
+			</div>		
+	</div>
+   <div>
+        <form action="/TeachDocument2/UpDoc/importExcel" method="post" enctype="multipart/form-data">  
+                            选择要导入的文件：<input type="file" name="fileUp" />  
+                    <input type="submit" value="导入" /> 
+        </form>
+   </div>
+   
+   <script src="../js/jquery-2.1.0.js"></script>
+   <script src="system.js"></script>
+</body>
+</html>

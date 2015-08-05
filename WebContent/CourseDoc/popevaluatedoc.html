@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="popevaluatedoc.css" />
+</head>
+<body style="overflow-x:hidden;">
+	<div id="main" style="background-color:#fff;">
+		
+		<div class="title"><p style="font-family:微软雅黑;margin-left:40px">教学文档审核</p></div>
+		
+		<div class="card">
+			<table width="86%" style="margin-left:80px;margin-top:25px" cellpadding=0 cellspacing=0>
+				<!-- <tr>
+					<td height="26px">文件名</td>
+					<td width="12px"></td>
+					<td height="34px"><input name="filename" width="300" vlue="asdf" style="outline:none;"></td>
+				</tr>
+				<tr><td height="1px"></td></tr> -->
+				<tr>
+				<td height="56px" text-align="right">评审结果</td>
+				<td width="0px"></td>
+					<td><select name="score" id="score" class="">
+						<option value ="95">优秀</option>
+						<option value ="85">良好</option>
+						<option value="60">及格</option>
+						<option value="0">不及格</option>
+					</select></td>
+				</tr>
+			</table>
+		</div>
+		
+		
+            <div id="button" style="font-family: 微软雅黑;" align="center">
+			<table><tr><td height="35px">提交</td>
+			</tr></table></div>
+			
+	
+		</div>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="popevaluatedoc.js" type="text/javascript" charset="utf-8"></script>	
+</body>
+</html>

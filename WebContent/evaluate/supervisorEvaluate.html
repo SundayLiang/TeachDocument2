@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>督导员评价</title>
+    <link rel="stylesheet" type="text/css" href="css/evaluate.css" />
+</head>
+<body>
+
+<div id="record">
+    <ul id="tabs">
+        <li><a name="tab1"> 教学评价 </a></li>
+        <li><a name="tab2"> 综合评价 </a></li>
+        <li><a name="tab3"> 评价参数 </a></li>
+
+    </ul>
+    <div id="content">
+
+        <div id="tab1">
+            <div id="chooses" style="text-align: center">筛选学期:
+                <select id="termchoose" onchange="newclass()">
+
+                </select>
+                筛选老师：
+                <select id="teacherchoose"  onchange="newclass()">
+
+                </select>
+                筛选课程：
+                <select id="coursechoose"  onchange="newclass()">
+
+                </select>
+            </div>
+            <div class="th">
+                <table width="100%" height="100%" border="0" cellpadding="0"
+                       cellspacing="0">
+                    <tr>
+                        <td width="200">课程编号</td>
+                        <td width="200">课程名称</td>
+                        <td width="200">任课教师</td>
+                        <td width="200">学期</td>
+                        <td width="300">面向班级</td>
+                        <td width="200">授课时间</td>
+                        <td width="100">操作</td>
+                    </tr>
+                </table>
+            </div>
+            <table id="allDataTable" class='dataTable' width="100%"
+                   height="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+            </table>
+            <table id="allPageTable" class='pageTable' border="0" width="100%"
+                   height="90" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="120">
+                        <div id="allFirstPage" class="pageBtn">首&nbsp;页</div>
+                    </td>
+                    <td width="120">
+                        <div id="allPrevPage" class="pageBtn">上一页</div>
+                    </td>
+                    <td width="120">
+                        <div id="allNextPage" class="pageBtn">下一页</div>
+                    </td>
+                    <td width="120">
+                        <div id="allLastPage" class="pageBtn">尾&nbsp;页</div>
+                    </td>
+                    <td width="280" align="center" class="f2"><label
+                            id="allCurrentPage"></label>/<label id="allCountPage"></label></td>
+                    <td class="f2">跳转到<input type="text" class="toPage" />页
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="tab2">
+            <div class="th">
+                <table width="100%" height="100%" border="0" cellpadding="0"
+                       cellspacing="0">
+                    <tr height="30px">
+                        <td width="200">课程23类型</td>
+                        <td width="130">考核类型</td>
+                        <td width="360">期末考核前提交存档资料</td>
+                        <td width="400">期末考核后提交存档</td>
+                    </tr>
+                </table>
+            </div>
+            <table id="allDataTable" class='dataTable' width="100%"
+                   height="100%" border="0" cellspacing="0" cellpadding="0">
+
+                <tr height="700px">
+                    <td width="98">必<br />
+                        <br />
+                        <br />修
+                    </td>
+                    <td width="100">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>考试</td>
+                            </tr>
+                            <tr>
+                                <td>考查</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="130">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>笔试</td>
+                            </tr>
+                            <tr>
+                                <td>机试</td>
+                            </tr>
+                            <tr>
+                                <td>考试</td>
+                            </tr>
+                            <tr>
+                                <td>结课作业</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td width="360">
+                        <table align="left" width="100%" height="100%" border="0"
+                               cellpadding="0" cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、课程考试申请表.doc<br /> 2、试卷模板（AB卷）.doc<br /> 3、标准答案及评分标准（AB卷）.doc<br />
+                                    4、试卷自评表（AB卷）.doc<br /> 5、平时成绩报告单.xlsx<br /> 6、实验报告电子版（已批改）<br />
+                                    7、实验资料（程序等）<br /> &nbsp 有实验则提交(6)(7)文档<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、课程考试申请表.doc<br /> 2、题库自评表.doc<br /> 3、平时成绩报告单.xlsx<br />
+                                    4、实验报告电子版（已批改）<br /> 5、实验资料（程序等）<br /> &nbsp 有实验则提交(4)(5)文档<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                        </table>
+                    </td>
+                    <td width="400">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、学生试卷（批改审核后）<br /> 2、试卷分析（实际考试试卷）<br /> 3、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、题库、评分标准、标准答案、试卷<br />（以上材料刻光盘提交）<br /> 2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、学生试卷（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、结课作业（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+                <tr height="300px">
+                    <td width="98">选<br />
+                        <br />
+                        <br />修
+                    </td>
+                    <td width="100">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>考查</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="130">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>考试</td>
+                            </tr>
+                            <tr>
+                                <td>结课作业</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td width="360">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td width="400">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、学生试卷（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、结课作业（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+        <div id="tab3">
+            <div class="th">
+                <table width="100%" height="100%" border="0" cellpadding="0"
+                       cellspacing="0">
+                    <tr height="30px">
+                        <td width="200">课程类型</td>
+                        <td width="130">考核类型</td>
+                        <td width="360">期末考核前提交存档资料</td>
+                        <td width="400">期末考核后提交存档</td>
+                    </tr>
+                </table>
+            </div>
+            <table id="allDataTable" class='dataTable' width="100%"
+                   height="100%" border="0" cellspacing="0" cellpadding="0">
+
+                <tr height="700px">
+                    <td width="98">必<br />
+                        <br />
+                        <br />修
+                    </td>
+                    <td width="100">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>考试</td>
+                            </tr>
+                            <tr>
+                                <td>考查</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="130">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>笔试</td>
+                            </tr>
+                            <tr>
+                                <td>机试</td>
+                            </tr>
+                            <tr>
+                                <td>考试</td>
+                            </tr>
+                            <tr>
+                                <td>结课作业</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td width="360">
+                        <table align="left" width="100%" height="100%" border="0"
+                               cellpadding="0" cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、课程考试申请表.doc<br /> 2、试卷模板（AB卷）.doc<br /> 3、标准答案及评分标准（AB卷）.doc<br />
+                                    4、试卷自评表（AB卷）.doc<br /> 5、平时成绩报告单.xlsx<br /> 6、实验报告电子版（已批改）<br />
+                                    7、实验资料（程序等）<br /> &nbsp 有实验则提交(6)(7)文档<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、课程考试申请表.doc<br /> 2、题库自评表.doc<br /> 3、平时成绩报告单.xlsx<br />
+                                    4、实验报告电子版（已批改）<br /> 5、实验资料（程序等）<br /> &nbsp 有实验则提交(4)(5)文档<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                        </table>
+                    </td>
+                    <td width="400">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、学生试卷（批改审核后）<br /> 2、试卷分析（实际考试试卷）<br /> 3、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、题库、评分标准、标准答案、试卷<br />（以上材料刻光盘提交）<br /> 2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、学生试卷（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、结课作业（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+                <tr height="300px">
+                    <td width="98">选<br />
+                        <br />
+                        <br />修
+                    </td>
+                    <td width="100">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>考查</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="130">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr>
+                                <td>考试</td>
+                            </tr>
+                            <tr>
+                                <td>结课作业</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td width="360">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、平时成绩报告单.xlsx<br /> 2、实验报告电子版（已批改）<br /> 3、实验资料（程序等）<br />
+                                    &nbsp 有实验则提交(2)(3)文档<br />
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td width="400">
+                        <table width="100%" height="100%" border="0" cellpadding="0"
+                               cellspacing="0">
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、学生试卷（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                            <tr height="175">
+                                <td style="padding-left: 20px; text-align: left;">
+                                    1、结课作业（批改审核后）<br /> &nbsp 电子版上交，纸介质自己存档<br />
+                                    2、纸质成绩单（教务处录入后按照班级打印）<br />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script src="../js/jquery-2.1.0.js" type="text/javascript"
+        charset="utf-8"></script>
+<script src="js/supervisorEvaluate.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

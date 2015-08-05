@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/model.css"/>
+    <script src="../js/jquery-2.1.0.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="js/jquery.modal.js" type="text/javascript"
+            charset="utf-8"></script>
+
+    <style type="text/css">		.container{			width: 600px;			height: 300px;			position: relative;			border: 1px solid #777777;		margin-left: auto; margin-right: auto; margin-top: 400px;}		.button{			position: absolute;			left: 15%;			top: 15%;			background: #eee;			padding: 5px 10px ;		}		.button:hover{			background: #aaa;			cursor: pointer;		}	</style>
+    调用modal插件：
+    	<script type="text/javascript">		function ShowModal(){			$('#container').modalInfowindow({				width:950,				height:550,				title:"中国",				content:"<iframe style='width: 900px;height: 500px;border: none;' src='manageUser.html'/>"			});		}	</script>
+    <title></title>
+</head>
+<body>
+<div class="container" id="container"><a class="button" onclick="ShowModal()">弹出窗口</a></div>
+</body>
+</html>

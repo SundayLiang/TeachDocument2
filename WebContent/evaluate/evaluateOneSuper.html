@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CourseDoc/docdetail.css"/>
+    <title></title>
+</head>
+<body>
+
+<div id="main">
+    <div class="card" style="height: 520px;width:1000px">
+        <p class="card_text">督导员评价表</p>
+        <div style="height:0px; width:900px; border-bottom:1px dashed #999;
+         margin-left:34px ;margin-top:5px;postition:absolute; top:50px"></div>
+
+        <form action="/TeachDocument2/evaluateTables/insertSuperEva" method="post" enctype="multipart/form-data" id="mainform">
+            <table  border="0" style="margin-top:18px" class="table_text" cellspacing="0" id="evaluateTable">
+                <!--<tr>-->
+                <!--<td width="290px" height="52px">课程名称：离散数学</td>-->
+                <!--<td width="290px" height="52px">授课班级：软件1104-1107</td>-->
+                <!--<td width="290px" height="52px">学生人数：离散数学</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td width="290px" height="52px">任课教师：韩春燕</td>-->
+                <!--<td width="290px" height="52px">授课地点：大成教学馆204</td>-->
+                <!--<td width="290px" height="52px">学生人数：200</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                <!--<td align="center" width="100" height="40"><font size="3">评价内容：</font></td>-->
+                <!--<td colspan="2" align="center" width="100" height="80"><textarea name="Remark" id="Remark" cols=75 rows=8 style="border-radius:6px;resize: none;" ></textarea></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td align="center" width="100" height="40"><font size="3">最终等级：</font></td>-->
+                <!--<td colspan="2" align="center" width="100" height="80">-->
+                <!--<input type="radio" name="score" value="95">优秀（90-100）-->
+                <!--<input type="radio" name="score" value="85">良好（80-90）-->
+                <!--<input type="radio" name="score" value="75">一般（70-80）-->
+                <!--<br/>-->
+                <!--<input type="radio" name="score" value="65">及格（60-70）-->
+                <!--<input type="radio" name="score" value="55">不及格（60以下）-->
+                <!--</td>-->
+                <!--</tr>-->
+                <!--<tr align="right">-->
+                <!--<td colspan="3">-->
+                <!--<input type="hidden" name="taskId" value=""/>-->
+                <!--<input class="subbutton" type="submit" value="提交"/>-->
+                <!--<input class="subbutton" type="submit" value="取消"/>-->
+                <!--</td>-->
+                <!--</tr>-->
+
+            </table>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/evaluateOneSuper.js"></script>
+
+</body>
+</html>

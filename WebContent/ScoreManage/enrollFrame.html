@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="enrollFrame.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/chosen/chosen.css"/>
+		<link rel="stylesheet" type="text/css" href="jquery.contextMenu.css"/>
+	</head>
+	<body>
+		<div id="record">
+			<ul id="tabs">
+				<li>
+					<a name="tab1">
+						全部
+					</a>
+				</li>
+				<li>
+					<a name="tab2">
+						未分班
+					</a>
+				</li>
+				<li>
+					<a name="tab3">
+						已分班
+					</a>
+				</li>
+				<li>
+					<a name="tab4">
+						检索查询
+					</a>
+				</li>
+				
+			</ul>
+			<div id="content">
+			<!-- <div id="tab4" style="margin-bottom: 15px;">
+					<div  style="-moz-user-select: none; -webkit-user-select: none; ">
+			<form
+				action="/stuenroll/jsp/backyard/ManageAction!searchEnrolls.action"
+				name="searchForm" method="post" id="searchForm">
+				<input type="hidden" name="order" value="1" id="order">
+				<input type="hidden" name="stype" id="stype"> <input
+					type="hidden" name="toPage" id="to">
+				<fieldset class="set" onmouseover="inSearch()"
+					onmouseout="outSearch()">
+					<legend class="leg">检索条件</legend>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0"
+						class="search_table">
+						<tr>
+							<td width="9%" height="39" align="center">学生姓名</td>
+							<td width="23%">
+								<input name="name" type="text" class="input" style="width:220px;" id="textfield" value="" maxlength="4" title="点击回车键搜索记录"/>
+							</td>
+							<td width="10%" align="center">身份证号</td>
+							<td width="23%">
+								<input name="pid" type="text" class="input" style="width:220px;" id="textfield3" value="" title="点击回车键搜索记录"/>
+							</td>
+							<td width="11%" align="center">申报专业</td>
+							<td width="24%">
+								<span id='a1'>
+								<select name="specialtySubmit" id='specialtySubmit' class="chzn-select" tabindex="2" style="width:230px;">
+									<option value="">- 选择 -</option>
+									<option value="物流"  >物流</option>
+									<option value="软件"  >软件</option>
+									
+								</select>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td height="45" align="center">培训机构</td>
+							<td>
+								<span id='a2'>
+								
+								<select name="eduSchool" id='eduSchool' class="chzn-select" tabindex="2" style="width:230px;">
+									<option value="">- 选择 -</option>
+									
+										<option value="辽宁丰田金杯技师学院"  >辽宁丰田金杯技师学院</option>
+									
+										<option value="辽宁大学人文科技自考培训学院"  >辽宁大学人文科技自考培训学院</option>
+									
+										<option value="辽宁慧缘职业培训学校"  >辽宁慧缘职业培训学校</option>
+									
+										<option value="辽宁省英博睿职业培训学校"  >辽宁省英博睿职业培训学校</option>
+									
+										<option value="辽宁科技大学"  >辽宁科技大学</option>
+									
+								</select>
+								
+
+								</span>
+							</td>
+							<td align="center">班级编号</td>
+							<td>
+								<span id='a3'>
+								<select name="classNo" id='classNo' class="chzn-select" tabindex="2" style="width:230px;">
+									<option value="">- 选择 -</option>
+									
+										<option value="软件1313"  >软件1313</option>
+									
+										<option value="软件1314"  >软件1314</option>
+									
+								</select>
+								</span>
+							</td>
+							<td align="center">参与状态</td>
+							<td>
+								<select name="joinState" class="chzn-select" tabindex="2" style="width:230px;">
+									<option value="">- 选择 -</option>
+									
+										<option value="已中退" >已中退</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+			</div>
+				</div>
+		<div id="popup_name" class="popup_block">
+		<p style="font-size: 28px;font-weight: bold;margin: 0px 0 10px 0">报名信息维护</p>
+		<form method="post" id="form_3" action="/regist/divide">
+  			<table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px;">
+  			<tr>
+  				<td height="50" width="85">申报专业：</td>
+  				<td>
+  					<select name="specialtySubmit" id='specialty' style="width:280px;height:32px;" onclick="nimei()" onchange="changeType()">
+						    <option value="">- 选择 -</option>
+						
+						
+					</select>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td height="50" width="85">培训学校</td>
+  				<td>
+  					<select name="eduSchool" id="edu"  style="width:280px;height:32px;" onchange="changeEdu()">
+						<option value="">- 选择 -</option>
+					</select>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td height="50" width="85">班级编号：</td>
+  				<td>
+  					<select name="classNo" id='class'  style="width:280px;height:32px;>
+						<option value="">- 选择 -</option>						
+					</select>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td height="50" width="85">参与状态：</td>
+  				<td>
+  					<select name="joinState" id="joinState" style="width:280px;height:32px;">
+						<option value="">- 选择 -</option>
+						
+						
+					</select>
+  				</td>
+  			</tr>
+  			</table>
+  			<input type="hidden" name="ids" id="ids_update">
+  			<input type="hidden" name="classArray" id="classArray">
+  		</form>
+  		<center>
+	 	<input type="button" value="分班" onclick="submitUpdate()" class="btn_1" style="margin: 10px 0 10px 0"/>
+  		<input type="button" id="cancel" value="取消" class="btn_1"/>
+  		</center>
+	 </div> -->
+				
+				<div id="tab1">
+					<div class="th">
+						<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="70">编号</td>
+								<td width="100">姓名</td>
+								<td width="200">身份证</td>
+								<td width="140">电话</td>
+								<td width="120">培训机构</td>
+								<td width="120">申报专业</td>
+								<td width="120">班级名称</td>
+								<td width="120">学号</td>
+								<td width="100">状态</td>
+							</tr>
+						</table>
+					</div>
+					<table id="allDataTable" class='dataTable' width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+				       
+					
+					</table>
+					<table id="allPageTable" class='pageTable' border="0" width="100%" height="90" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="120"><div id="allFirstPage" class="pageBtn">首&nbsp;页</div></td>
+							<td width="120"><div id="allPrevPage" class="pageBtn">上一页</div></td>
+							<td width="120"><div id="allNextPage" class="pageBtn">下一页</div></td>
+							<td width="120"><div id="allLastPage" class="pageBtn">尾&nbsp;页</div></td>
+							<td width="280" align="center" class="f2"><label id="allCurrentPage"></label>/<label id="allCountPage"></label></td>
+							<td class="f2">跳转到<input type="text" class="toPage"/>页</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="enrollFrame.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/context/jquery.contextMenu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/context/jquery.ui.position.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/context/prettify.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/context/screen.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../css/chosen/chosen.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
